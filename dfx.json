@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "de-CouncilX-backend": {
+      "candid": "src/de-CouncilX-backend/de-CouncilX-backend.did",
+      "package": "de-CouncilX-backend",
+      "type": "rust"
+    },
+    "de-CouncilX-frontend": {
+      "dependencies": [
+        "de-CouncilX-backend"
+      ],
+      "source": [
+        "src/de-CouncilX-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "de-CouncilX-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
